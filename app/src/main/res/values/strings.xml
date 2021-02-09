@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">So Music</string>
+    <string name="title_main">Library</string>
+    <string name="songs">songs</string>
+    <string name="Album">Album</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Empty">Empty</string>
+    <string name="songTitle">Song Name</string>
+    <string name="albumName">Album Title</string>
+
+
+</resources>
