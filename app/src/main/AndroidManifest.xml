@@ -11,8 +11,10 @@
         android:roundIcon="@mipmap/icon_app_big"
         android:supportsRtl="true"
         android:theme="@style/Theme.SoMusic">
-        <activity android:name=".musicActivity"></activity>
         <activity android:name=".MainActivity">
+        </activity>
+        <activity android:name=".musicActivity" />
+            <activity android:name=".Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

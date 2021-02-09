@@ -42,6 +42,7 @@ import java.util.concurrent.TimeUnit;
 public class MainActivity extends AppCompatActivity {
     public static boolean status = true;
     public static ArrayList<SongData> MusicFiles = new ArrayList<SongData>();
+    public static ArrayList<SongData> Favsongs = new ArrayList<SongData>() ;
     private final int STORAGE_PERMISSION_CODE = 1;
     private final String Permission = Manifest.permission.READ_EXTERNAL_STORAGE;
     public static MediaPlayer player = null;

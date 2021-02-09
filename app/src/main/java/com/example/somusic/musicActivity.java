@@ -78,6 +78,19 @@ public class musicActivity extends AppCompatActivity {
 
             }
         });
+
+        ImageView likebutton = findViewById(R.id.like);
+        likebutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                /* just checking not working just demo */
+              MainActivity.Favsongs.add( MainActivity.MusicFiles.get(SongsFrag.pos));
+
+                // MainActivity.Favsongs.add();
+
+                likebutton.setImageResource(R.drawable.baseline_favorite_black_48);
+            }
+        });
     }
     private void iniciatePlayer()
     {

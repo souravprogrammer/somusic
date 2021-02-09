@@ -28,6 +28,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.IOException;
+import java.io.PushbackInputStream;
 import java.util.ArrayList;
 
 /**
@@ -37,6 +38,7 @@ import java.util.ArrayList;
  */
 public class SongsFrag extends Fragment implements RecycleAdapter.OnItemListner {
 
+    public static int pos ;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -114,7 +116,8 @@ public class SongsFrag extends Fragment implements RecycleAdapter.OnItemListner 
      *  function get called and prepare and Release the sng according to it...
      * **/
     public void OnItemClick(int position) {
-       // AudioManager audioManager = (AudioManager) Context.getSystemService(Context.AUDIO_SERVICE);
+        pos = position ;
+        // AudioManager audioManager = (AudioManager) Context.getSystemService(Context.AUDIO_SERVICE);
         SongData currentsong = MainActivity.MusicFiles.get(position); // getting a song from the list
         long id = currentsong.getId();
         Uri contentUri = ContentUris.withAppendedId(

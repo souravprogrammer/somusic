@@ -19,7 +19,7 @@ public class PagerAdapter extends FragmentPagerAdapter {
         super(fm);
         // Title of TABS
         TabTitle.add(new String("Songs")) ;
-        TabTitle.add(new String("Album")) ;
+        TabTitle.add(new String("favourite")) ;
     }
     @Nullable
     @Override
